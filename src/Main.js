@@ -1,5 +1,8 @@
-export default Main = () => {
+
+const Main = () => {
     return (
         <main></main>
     )
 }
+
+export default Main;
