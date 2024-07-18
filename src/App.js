@@ -7,8 +7,10 @@ import Nav from './Nav';
 function App() {
   return (
     <>
+    <div id='headerNav'>
       <Header/>
       <Nav/>
+    </div>
       <Main/>
       <Footer/>
     </>
