@@ -1,8 +1,10 @@
-import "./Nav.css";
+import "./css/Nav.css";
+import logo from './images/Logo.jpg';
 
 const Nav = () => {
     return (
-        <nav>
+        <nav id="navigation">
+            <img src={logo} alt="Logo"></img>
             <ul>
                 <li><a href="https://example.com" target="_blank" rel="noreferrer">Home</a></li>
                 <li><a href="https://example.com" target="_blank" rel="noreferrer">About</a></li>

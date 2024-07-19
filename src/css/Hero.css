@@ -1,0 +1,94 @@
+#container {
+    border: 1px solid blue;
+    display: flex;
+    background-color: #495E57;
+    /* background-image: url("https://images2.alphacoders.com/862/862730.jpg"); */
+    align-items: center;
+    /* gap: 20vw; */
+    /* width: 100%; */
+}
+
+#text {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    /* width: 60%; */
+    margin-left: 5%;
+}
+
+#text .last-element {
+    margin-top: auto;
+  }
+
+#text > h2 {
+    /* width: 60vw; */
+    color: #F4CE14;
+    font-size: 4vw;
+}
+
+#text > h3 {
+    margin-top: -3.5vw;
+    color: white;
+    font-size: 2.5vw;
+}
+
+#text > p {
+    margin-top: 0;
+    width: 20vw;
+    color: white;
+    font-size: 1.6vw;
+}
+
+#reserve-button {
+    background-color: #F4CE14;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.4vw;
+    width: fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* #image {
+    margin-right: 20%;
+} */
+
+#container > img {
+    border: 1px solid red;
+    /* position: absolute;
+    top: 20vh;
+    left: 60vw; */
+    margin-left: 25vw;
+    width: 21vw;
+    /* transform: scale(0.5, 0.5); */
+    /* margin-top: 50px; */
+}
+
+@media (max-width: 1023px) {
+    #text > h2 {
+        font-size: 6vw;
+    }
+
+    #text > h3 {
+        font-size: 4.5vw;
+    }
+
+    #text > p {
+        font-size: 3vw;
+        width: 25vw;
+    }
+
+    #reserve-button {
+        font-size: 2.5vw;
+    }
+
+    #container > img {
+        border: 1px solid red;
+        position: static;
+        margin-left: 14vw;
+        width: 30vw;
+        /* transform: scale(0.5, 0.5); */
+        /* margin-top: 50px; */
+    }
+}
