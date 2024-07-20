@@ -1,0 +1,33 @@
+#review {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+#star {
+    width: 30px;
+    min-width: 15px;
+}
+
+#user-image {
+    width: 200px;
+    min-width: 50px;
+    max-width: 200px;
+}
+
+#user-img-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#review-description {
+    width: 20vw;
+    min-width: 100px;
+}
+
+@media (max-width: 1023px) {
+    #review-description {
+        width: 100%;
+    }
+}
