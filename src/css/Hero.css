@@ -41,7 +41,7 @@
 
 #reserve-button {
     background-color: #F4CE14;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px;
     font-weight: bold;
     font-size: 1.4vw;
@@ -80,6 +80,8 @@
     }
 
     #reserve-button {
+        border-radius: 10px;
+        padding: 5px;
         font-size: 2.5vw;
     }
 
