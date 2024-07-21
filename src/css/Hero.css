@@ -1,15 +1,16 @@
 #container {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     background-color: #495E57;
     /* background-image: url("https://images2.alphacoders.com/862/862730.jpg"); */
     align-items: center;
     /* gap: 20vw; */
     /* width: 100%; */
+    /* margin-top: 1vw; */
 }
 
 #text {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
     /* width: 60%; */
@@ -55,7 +56,7 @@
 } */
 
 #container > img {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* position: absolute;
     top: 20vh;
     left: 60vw; */
@@ -72,6 +73,7 @@
 
     #text > h3 {
         font-size: 4.5vw;
+        margin-top: -4.5vw;
     }
 
     #text > p {
@@ -83,10 +85,11 @@
         border-radius: 10px;
         padding: 5px;
         font-size: 2.5vw;
+        margin-bottom: 3vw;
     }
 
     #container > img {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         position: static;
         margin-left: 14vw;
         width: 30vw;

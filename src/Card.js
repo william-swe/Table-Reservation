@@ -15,7 +15,7 @@ const Card = ({image, title, price, description}) => {
                 <div id="card-description">{description}</div>
                 <div id="card-delivery">
                     <p>Order a delivery</p>
-                    <img src={car} alt={"delivery image"}></img>
+                    <img src={car} alt={"delivery"}></img>
                 </div>
             </div>
         </div>

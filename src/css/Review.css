@@ -1,4 +1,5 @@
 #review {
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -13,12 +14,13 @@
     width: 200px;
     min-width: 50px;
     max-width: 200px;
+    margin-top: 0.5vw;
 }
 
 #user-img-name {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 2vw;
 }
 
 #review-description {
@@ -29,6 +31,21 @@
 }
 
 @media (max-width: 1023px) {
+    /* #review {
+        align-items: center;
+    } */
+
+    /* #user-star-img-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    /* #review-description {
+        text-align: center;
+    } */
+
     #review-description {
         width: 100%;
         font-size: 3vw;
