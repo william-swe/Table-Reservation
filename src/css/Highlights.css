@@ -22,6 +22,7 @@
     font-size: 1.3vw;
     font-weight: bold;
     background-color: #F4CE14;
+    cursor: pointer;
 }
 
 #cards {

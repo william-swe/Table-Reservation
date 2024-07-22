@@ -1,0 +1,93 @@
+#reserve {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: lightgrey;
+    height: 100vh;
+}
+
+#navigation {
+    /* width: 100%; */
+    border: 1px solid black;
+}
+
+#reserve-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vw auto;
+    /* border: 1px solid black; */
+    padding: 3vw 4vw;
+    /* width: 100%; */
+    background-color: white;
+}
+
+#reserve-form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+/* #reserve-datepicker {
+    border: 1px solid black;
+    background-color: lightgrey;
+} */
+
+#reserve-occasion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+#reserve-datepicker > label, #reserve-timepicker > label, #reserve-guests-no > label, #reserve-occasion > label {
+    margin-right: 10px;
+    font-size: 1.6vw;
+}
+
+#reserve-occasion > div > label {
+    font-size: 1.3vw;
+    margin-left: 5px;
+}
+
+#datepicker, #timepicker, #reserve-dropdown {
+    border-radius: 5px;
+    font-size: 1.3vw;
+    /* border: 1px solid blue; */
+    background-color: lightgrey;
+}
+
+#reserve-button {
+    background-color: #F4CE14;
+    border-radius: 10px;
+    padding: 0.5vw;
+    font-weight: bold;
+    font-size: 1.3vw;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#reserve-textarea {
+    width: 100%;
+    height: 10vh;
+    font-size: 1.2vw;
+}
+
+@media (max-width: 1023px) {
+    #datepicker, #timepicker, #reserve-dropdown, #reserve-button {
+        font-size: 4.5vw;
+    }
+
+    #reserve-datepicker > label, #reserve-timepicker > label, #reserve-guests-no > label, #reserve-occasion > label {
+        font-size: 5vw;
+    }
+
+    #reserve-occasion > div > label {
+        font-size: 4vw;
+    }
+
+    #reserve-textarea {
+        font-size: 4.2vw;
+    }
+}

@@ -40,7 +40,7 @@
     font-size: 1.6vw;
 }
 
-#reserve-button {
+#hero-button {
     background-color: #F4CE14;
     border-radius: 10px;
     padding: 10px;
@@ -49,6 +49,7 @@
     width: fit-content;
     margin-top: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 /* #image {
@@ -81,7 +82,7 @@
         width: 25vw;
     }
 
-    #reserve-button {
+    #hero-button {
         border-radius: 10px;
         padding: 5px;
         font-size: 2.5vw;
