@@ -40,7 +40,6 @@
     min-width: 150px;
     max-width: max(500px, 30vw);
     margin-right: 10%;
-    /* max-height: 180px; */
 }
 
 @media (max-width: 1023px) {

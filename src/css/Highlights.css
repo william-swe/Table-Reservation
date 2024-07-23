@@ -25,13 +25,16 @@
     cursor: pointer;
 }
 
+#highlight-header > input:hover {
+    background-color: yellow;
+}
+
 #cards {
     display: flex;
     justify-content: center;
     width: 88vw;
     margin: auto;
     flex-wrap: wrap;
-    /* width: 100%; */
 }
 
 @media (max-width: 1023px) {

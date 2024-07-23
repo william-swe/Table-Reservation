@@ -1,0 +1,57 @@
+#form {
+    background-color: lightgrey;
+    min-height: 100vh;
+}
+
+.form-box {
+    padding: 6vh 6vw;
+}
+
+#form Input, Textarea {
+    width: 30vw;
+    font-size: large;
+}
+
+.form-label {
+    font-size: large;
+    margin-bottom: 0.5vw;
+}
+
+#firstName, #lastName, #email, #comment {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-button {
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.form-button:hover {
+    background-color: #F4CE14;
+}
+
+@media (max-width: 1023px) {
+    .form-box {
+        padding: 3vh 15vw;
+    }
+
+    .form-heading {
+        font-size: 40px;
+    }
+
+    #form Input, Textarea {
+        width: 100%;
+        font-size: x-large;
+    }
+
+    .form-label {
+        font-size: x-large;
+        margin-bottom: 2vw;
+    }
+
+    .form-button {
+        font-size: x-large;
+    }
+}

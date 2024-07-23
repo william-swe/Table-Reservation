@@ -1,5 +1,5 @@
-import "./css/Card.css"
-import car from "./images/car.png"
+import "../css/Card.css"
+import car from "../images/car.png"
 
 const Card = ({image, title, price, description}) => {
     return (

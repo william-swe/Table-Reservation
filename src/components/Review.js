@@ -1,5 +1,5 @@
-import "./css/Review.css"
-import star from "./images/star.png"
+import "../css/Review.css"
+import star from "../images/star.png"
 
 const Review = ({stars, image, name, description}) => {
     return (

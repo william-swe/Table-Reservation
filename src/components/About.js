@@ -1,5 +1,5 @@
-import "./css/About.css"
-import restaurant from "./images/restaurant.jpg"
+import "../css/About.css"
+import restaurant from "../images/restaurant.jpg"
 
 const About = () => {
     return (

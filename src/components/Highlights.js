@@ -1,8 +1,8 @@
 import Card from "./Card";
-import "./css/Highlights.css"
-import img1 from "./images/Salad smaller size.jpg"
-import img2 from "./images/Tomato breads smaller size.jpg"
-import img3 from "./images/Nui smaller size.jpg"
+import "../css/Highlights.css"
+import img1 from "../images/Salad smaller size.jpg"
+import img2 from "../images/Tomato breads smaller size.jpg"
+import img3 from "../images/Nui smaller size.jpg"
 
 const Highlights = () => {
     const descriptions = [

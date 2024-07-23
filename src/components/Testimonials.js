@@ -1,6 +1,6 @@
-import "./css/Testimonials.css"
+import "../css/Testimonials.css"
 import Review from "./Review"
-import user1 from "./images/user1.png"
+import user1 from "../images/user1.png"
 
 const Testimonials = () => {
     const reviews = [
@@ -24,11 +24,17 @@ const Testimonials = () => {
         }
     ]
     return (
-        <div id="testimonial">
-            <p id="testimonial-header">Testimonials</p>
-            <div id="reviews">
-                {reviews.map((item) => (
-                    <Review stars={item["stars"]} image={item["image"]} name={item["name"]} description={item["description"]}/>
+        <div className="testimonial">
+            <p className="testimonial-header">Testimonials</p>
+            <div className="reviews">
+                {reviews.map((item, index) => (
+                    <Review
+                        key={index}
+                        stars={item.stars}
+                        image={item.image}
+                        name={item.name}
+                        description={item.description}
+                    />
                 ))}
             </div>
         </div>

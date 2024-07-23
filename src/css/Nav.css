@@ -1,15 +1,8 @@
-/* nav {
-    width: 50vw;
-    margin: auto;
-} */
-
 #navigation {
     background-color: lightyellow;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    /* margin-top: 1vw; */
-    padding: 1vw;
+    padding: 0.5vw;
 }
 
 #navigation > img {
@@ -17,6 +10,7 @@
     max-width: 300px;
     min-width: 200px;
     margin-left: 5%;
+    cursor: pointer;
 }
 
 a {
@@ -26,7 +20,11 @@ a {
 }
 
 #navigation > ul > li > a {
-    font-size: 1.8vw;
+    font-size: 1.6vw;
+}
+
+#navigation > ul > li > a:hover {
+    font-weight: bold;
 }
 
 #navigation > ul {
@@ -36,7 +34,6 @@ a {
     align-items: center;
     padding: 0;
     flex: 1;
-    /* margin-left: 1vw; */
 }
 
 #navigation > ul > li {
@@ -60,8 +57,6 @@ a {
     }
 
     #navigation > ul > li {
-        /* padding: 0 100%; */
-        /* width: 100%; */
         margin: 10px 0;
         font-size: max(4vw, 16px);
     }

@@ -1,19 +1,12 @@
 #container {
-    /* border: 1px solid blue; */
     display: flex;
     background-color: #495E57;
-    /* background-image: url("https://images2.alphacoders.com/862/862730.jpg"); */
     align-items: center;
-    /* gap: 20vw; */
-    /* width: 100%; */
-    /* margin-top: 1vw; */
 }
 
 #text {
-    /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
-    /* width: 60%; */
     margin-left: 5%;
 }
 
@@ -22,7 +15,6 @@
   }
 
 #text > h2 {
-    /* width: 60vw; */
     color: #F4CE14;
     font-size: 4vw;
 }
@@ -52,19 +44,13 @@
     cursor: pointer;
 }
 
-/* #image {
-    margin-right: 20%;
-} */
+#hero-button:hover {
+    background-color: yellow;
+}
 
 #container > img {
-    /* border: 1px solid red; */
-    /* position: absolute;
-    top: 20vh;
-    left: 60vw; */
     margin-left: 25vw;
     width: 21vw;
-    /* transform: scale(0.5, 0.5); */
-    /* margin-top: 50px; */
 }
 
 @media (max-width: 1023px) {
@@ -90,11 +76,8 @@
     }
 
     #container > img {
-        /* border: 1px solid red; */
         position: static;
         margin-left: 14vw;
         width: 30vw;
-        /* transform: scale(0.5, 0.5); */
-        /* margin-top: 50px; */
     }
 }

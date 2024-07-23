@@ -1,6 +1,6 @@
-import "./css/Hero.css"
-import breads from "./images/Breads served by a waiter smaller size.jpg"
-import { useNavigate } from 'react-router-dom';
+import "../css/Hero.css"
+import breads from "../images/Breads served by a waiter smaller size.jpg"
+import { useNavigate } from 'react-router-dom'
 
 const Hero = () => {
     const navigate = useNavigate();
@@ -11,7 +11,7 @@ const Hero = () => {
 
     return (
         <div id='container'>
-            <div class="overlay"></div>
+            <div className="overlay"></div>
             <div id='text'>
                 <h2>Little Lemon</h2>
                 <h3>Chicago</h3>

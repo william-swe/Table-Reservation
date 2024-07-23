@@ -1,25 +1,24 @@
-#testimonial {
+.testimonial {
     background-color: lightyellow;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-bottom: 2vw; */
+    padding-bottom: 2vw;
 }
 
-#reviews {
+.reviews {
     display: flex;
     justify-content: space-between;
     width: 80%;
 }
 
-#testimonial-header {
+.testimonial-header {
     font-size: 2.5vw;
     font-weight: bold;
 }
 
 @media (max-width: 1023px) {
-    #reviews {
-        /* border: 1px solid red; */
+    .reviews {
         flex-direction: column;
     }
 }

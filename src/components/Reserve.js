@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import "./css/Reserve.css"
-import Nav from './Nav';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
-import { addDays } from 'date-fns';
-// import TimePicker from 'react-time-picker';
+import React, { useState } from 'react'
+import "../css/Reserve.css"
+import Nav from './Nav'
+import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker.css'
+import { addDays } from 'date-fns'
+import { useNavigate } from 'react-router-dom'
 
 const Reserve = () => {
     const [startDate, setStartDate] = useState(new Date());
-    const [time, setTime] = useState('10:00');
+    const [time, setTime] = useState('17:00');
     const dropdowns = ["1", "2", "3", "4", "5+"];
     const [dropdownOption, setdropdownOption] = useState("1");
     const occasions = [
@@ -18,10 +18,11 @@ const Reserve = () => {
     ];
     const [occasionOption, setoccasionOption] = useState(occasions[0]);
     const [otherText, setOtherText] = useState("");
+    const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // alert(`Selected date: ${startDate.toDateString()}`);
+        navigate("/form");
     };
 
     return (
@@ -29,6 +30,7 @@ const Reserve = () => {
             <Nav id="reserve-nav" />
             <form id="reserve-form" onSubmit={handleSubmit}>
                 <div>
+                    <h1>Reserve a table</h1>
                     <div id="reserve-datepicker">
                         <label>Select Date:</label>
                         <DatePicker
@@ -45,8 +47,8 @@ const Reserve = () => {
                             type="time"
                             value={time}
                             onChange={(event) => setTime(event.target.value)}
-                            min="08:00"
-                            max="21:00"
+                            min="17:00"
+                            max="22:00"
                         />
                     </div>
                     <div id="reserve-guests-no">

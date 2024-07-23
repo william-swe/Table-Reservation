@@ -1,8 +1,6 @@
 #review {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 
 #star {
@@ -31,21 +29,6 @@
 }
 
 @media (max-width: 1023px) {
-    /* #review {
-        align-items: center;
-    } */
-
-    /* #user-star-img-name {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } */
-
-    /* #review-description {
-        text-align: center;
-    } */
-
     #review-description {
         width: 100%;
         font-size: 3vw;
