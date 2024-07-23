@@ -1,24 +1,23 @@
-import React, { useState } from 'react'
-import "../css/Reserve.css"
-import Nav from './Nav'
-import DatePicker from 'react-datepicker'
-import 'react-datepicker/dist/react-datepicker.css'
-import { addDays } from 'date-fns'
-import { useNavigate } from 'react-router-dom'
+import React, { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import "../css/Reserve.css";
+import Nav from './Nav';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+import { addDays } from 'date-fns';
 
 const Reserve = () => {
     const [startDate, setStartDate] = useState(new Date());
-    const [time, setTime] = useState('17:00');
+    const location = useLocation();
+    const navigate = useNavigate();
+    const default_times = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+    const times = location.state?.times || default_times;
+    const [time, setTime] = useState(times[0]);
     const dropdowns = ["1", "2", "3", "4", "5+"];
     const [dropdownOption, setdropdownOption] = useState("1");
-    const occasions = [
-        "Birthday",
-        "Anniversary",
-        "Other"
-    ];
+    const occasions = ["Birthday", "Anniversary", "Other"];
     const [occasionOption, setoccasionOption] = useState(occasions[0]);
     const [otherText, setOtherText] = useState("");
-    const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -42,14 +41,17 @@ const Reserve = () => {
                     </div>
                     <div id="reserve-timepicker">
                         <label>Select Time:</label>
-                        <input
+                        <select
                             id="timepicker"
-                            type="time"
                             value={time}
                             onChange={(event) => setTime(event.target.value)}
-                            min="17:00"
-                            max="22:00"
-                        />
+                        >
+                            {times.map((timeOption, index) => (
+                                <option key={index} value={timeOption}>
+                                    {timeOption}
+                                </option>
+                            ))}
+                        </select>
                     </div>
                     <div id="reserve-guests-no">
                         <label>Select number of guest(s):</label>
@@ -72,7 +74,6 @@ const Reserve = () => {
                                 <input
                                     type="radio"
                                     id={`radio-${option}`}
-                                    // name="custom-radio"
                                     value={option}
                                     checked={occasionOption === option}
                                     onChange={(event) => setoccasionOption(event.target.value)}
@@ -83,7 +84,7 @@ const Reserve = () => {
                     </div>
                     {occasionOption === "Other" && (
                         <textarea
-                        id="reserve-textarea"
+                            id="reserve-textarea"
                             placeholder="Please specify your occasion"
                             value={otherText}
                             onChange={(event) => setOtherText(event.target.value)}

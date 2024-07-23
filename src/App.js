@@ -27,6 +27,7 @@ function App() {
               <Footer />
             </>
           } />
+          {/* Booking Form components: */}
           <Route path="/reserve" element={<Reserve />} />
           <Route path="/form" element={<Form />} />
         </Routes>
