@@ -41,7 +41,7 @@
 }
 
 #reserve-occasion > div > label {
-    font-size: 1.3vw;
+    font-size: 1.4vw;
     margin-left: 5px;
 }
 
@@ -70,7 +70,7 @@
 #reserve-textarea {
     width: 100%;
     height: 10vh;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
 }
 
 @media (max-width: 1023px) {

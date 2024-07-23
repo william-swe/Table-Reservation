@@ -27,6 +27,7 @@ footer {
 
 #footer-nav > ul > li > a:hover {
     font-size: 2vw;
+    font-weight: bold;
 }
 
 #footer-contact {

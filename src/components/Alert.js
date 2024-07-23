@@ -31,7 +31,7 @@ function Alert() {
             <AlertDialogOverlay>
                 <AlertDialogContent py={4} backgroundColor={isSuccess ? '#81C784' : '#FF8A65'}>
                     <Box position="relative">
-                        <AlertDialogHeader fontSize="x-large" fontWeight="bold">
+                        <AlertDialogHeader fontSize="x-large" fontWeight="bold" marginLeft={10}>
                             {isSuccess ? 'All good!' : 'Oops!'}
                         </AlertDialogHeader>
                         <CloseButton
@@ -41,7 +41,7 @@ function Alert() {
                             onClick={handleClose}
                         />
                     </Box>
-                    <AlertDialogBody fontSize="x-large">{message}</AlertDialogBody>
+                    <AlertDialogBody marginLeft={10} fontSize="x-large">{message}</AlertDialogBody>
                 </AlertDialogContent>
             </AlertDialogOverlay>
         </AlertDialog>
